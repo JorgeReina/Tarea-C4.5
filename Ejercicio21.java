@@ -18,16 +18,18 @@ public class Ejercicio21 {
 		//Definimos la clase datos.
 		Scanner datos = new Scanner(System.in);
 		
-		//Pedimos al usuario que introduzca un número.
+		//Pedimos al usuario que introduzca las notas del examen.
 		System.out.print("Por favor, introduce la nota del primer examen: ");
 		double n1 = datos.nextDouble();
 		System.out.print("Por favor, introduce la nota del segundo examen: ");
 		double n2 = datos.nextDouble();
 		
+		//Calculamos la meida
 		double media = (n1 + n2) / 2;
 		
 		String recuperacion;
 		
+		//Definimos las sentencias 'if' nos dira la media.
 		if (media < 5 ){
 			System.out.print("La media es menor que 5");
 			System.out.print("¿Cuál ha sido el resultado de la recuperación? (apto/no apto)");
